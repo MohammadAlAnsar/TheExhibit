@@ -1,0 +1,236 @@
+/*
+.navbar {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    // background: url('assets/img/pattern.jpg');
+    height: 8vh;
+    animation-name: fadeOut;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    
+}
+.navbar-nav{
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.nav-item
+{
+ animation: bold;
+ animation-duration: 10s;
+ animation-iteration-count: 1;
+}
+.navbar-brand img {
+    height: 6vh;
+    width: 6vh;
+}
+@keyframes fadeOut {
+    0%
+    {
+        opacity: 0%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+@keyframes bold {
+    0%
+    {
+        font-size: 2vh;
+    }
+    100%
+    {
+        font-size: inherit;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+    .navbar {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50% );
+        z-index: 4;
+    }
+    
+  .navbar-nav {
+      position: fixed;
+      background-color: #5f1782;
+      
+      height: 30vh;
+      width: 100%;
+      flex-direction: column;
+        clip-path: circle(0px at 54% 10%);
+        -webkit-clip-path: circle(0px at 54% 10%);
+        transition: all 1s ease-out;
+        z-index: 2;
+        pointer-events: none;
+  }
+  .navbar-nav.open {
+    clip-path: circle(600px at 54% -10%);
+    -webkit-clip-path: circle(600px at 54% -10%);
+    pointer-events: all;
+  }
+}*/
+.n {
+    /* position: fixed; */
+    height: 8vh;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);  
+    animation-name: fadeOut;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    /* background-color: #ffc155; */
+}
+@keyframes fadeOut {
+    0%
+    {
+        opacity: 0%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+
+.n-l {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+     margin-left: auto;
+
+}
+
+.n-l li {
+    /* color: cornsilk; */
+    font-size: 16px;
+    /* text-decoration: none; */
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+    /* text-orientation: initial;  */
+    // padding: 5px;
+}
+.n-l a 
+{
+    text-decoration: none;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+a:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+@media screen and (max-width: 1200px)
+{
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+    .n {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50% );
+        z-index: 4;
+    }
+    
+  .n-l {
+      position: fixed;
+      background-image: linear-gradient(to right, #a517ba, #5f1782);
+    //    background-color: white; 
+      height: 30vh;
+      width: 100%;
+      flex-direction: column;
+        clip-path: circle(0px at 5% -10%);
+        -webkit-clip-path: circle(0px at 52% -10%);
+        transition: all 1s ease-out;
+        z-index: 2;
+        pointer-events: none;
+  }
+  .n-l.open {
+    clip-path: circle(200px at 52% -10%);
+    -webkit-clip-path: circle(200px at 52% -10%);
+    pointer-events: all;
+  }
+
+
+}
+@media screen and (max-width: 768px)
+{
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+    .n {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50% );
+        z-index: 4;
+    }
+    
+  .n-l {
+      position: fixed;
+      background-image: linear-gradient(to right, #a517ba, #5f1782);
+      /* background-color: #ffc155; */
+      height: 30vh;
+      width: 100%;
+      flex-direction: column;
+        clip-path: circle(0px at 54% -10%);
+        -webkit-clip-path: circle(0px at 54% -10%);
+        transition: all 1s ease-out;
+        z-index: 2;
+        pointer-events: none;
+  }
+  .n-l.open {
+    clip-path: circle(200px at 54% -10%);
+    -webkit-clip-path: circle(200px at 54% -10%);
+    pointer-events: all;
+  }
+
+
+}
